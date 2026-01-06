@@ -1,0 +1,8 @@
+Method: GET
+Segments: Array
+(
+    [0] => penilaian-kinerja
+)
+
+Resource: penilaian-kinerja
+

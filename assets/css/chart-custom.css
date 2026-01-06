@@ -1,0 +1,180 @@
+/* CHART & PROGRESS SECTION STYLING */
+
+/* Dashboard Container */
+.dashboard-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* Charts Row Grid */
+.charts-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+/* Chart Container */
+.chart-container {
+    background: white;
+    border-radius: 6px;
+    padding: 10px 12px; /* Dari 12px → 10px */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: visible;
+}
+
+/* Chart Title & Subtitle */
+.chart-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.chart-total {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2px; 
+    line-height: 1.1;
+}
+
+.chart-subtitle {
+    font-size: 0.65rem;
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 6px; 
+}
+
+/* Chart Canvas */
+.chart-canvas { 
+    position: relative; 
+    height: 320px !important;
+    max-height: 400px;
+    overflow-x: hidden; 
+    overflow-y: auto;
+    padding-right: 6px; 
+    margin-top: 6px;
+}
+
+/* Canvas size */
+.chart-canvas canvas {
+    display: block !important;
+    width: 100% !important;
+    min-height: 280px !important; /* Dari 400px → 280px */
+}
+
+/* Scrollbar */
+.chart-canvas::-webkit-scrollbar {
+    width: 6px; /* Dari 10px → 6px */
+}
+
+.chart-canvas::-webkit-scrollbar-track {
+    background: #ecf0f1;
+    border-radius: 3px;
+    margin: 5px 0;
+}
+
+.chart-canvas::-webkit-scrollbar-thumb {
+    background: #95a5a6;
+    border-radius: 3px;
+    border: 1px solid #ecf0f1;
+}
+
+.chart-canvas::-webkit-scrollbar-thumb:hover {
+    background: #7f8c8d;
+}
+
+/* Firefox scrollbar */
+.chart-canvas {
+    scrollbar-width: thin;
+    scrollbar-color: #95a5a6 #ecf0f1;
+}
+
+/* Progress Section */
+.progress-section {
+    background: white;
+    border-radius: 6px;
+    padding: 10px 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 12px;
+}
+
+.progress-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.progress-item { 
+    margin-bottom: 10px;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.progress-label-text,
+.progress-label-value {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.7rem;
+}
+
+.progress-bar-container {
+    background: #ecf0f1;
+    border-radius: 3px;
+    height: 14px; 
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 0.65rem;
+    padding: 0 6px;
+}
+
+/* Progress Bar Colors */
+.progress-bar.putus { 
+    background: linear-gradient(135deg, #2ecc71, #27ae60); 
+}
+
+.progress-bar.minutasi { 
+    background: linear-gradient(135deg, #3498db, #2980b9); 
+}
+
+.progress-bar.proses { 
+    background: linear-gradient(135deg, #f39c12, #e67e22); 
+}
+
+/* Export Button */
+.progress-section .export-btn {
+    margin-top: 12px;
+    padding: 8px 14px; /* Lebih kecil */
+    font-size: 0.75rem;
+    width: 100%;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.progress-section .export-btn:hover {
+    background: #2980b9;
+}
